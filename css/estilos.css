@@ -1,0 +1,317 @@
+/* Estilos Generales  */
+html, body {
+    height: 100%;
+    width: 100%;
+}    
+    /* font-family: 'Roboto', sans-serif; */
+
+/* modificar el modelo de las cajas de css */
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+   /*font-family: 'Balthazar', serif; */
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Tektur', sans-serif; */
+}
+.container{
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+/* ESTILO DE LOS CONTENIDOS  */
+/* Estilo de header  */
+header {
+
+    background-color: #105f0f;
+    
+}
+#logo {
+    float: left;
+}
+#info_contacto {
+    float: right;
+    margin-top: 23px;
+   
+}
+#info_contacto i {
+    color: #fff;
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+/* seccion 1 */
+article > section:nth-child(1){
+
+    background-image: linear-gradient( to left top, rgba(55,185,30,0.83), rgba(25,59,240,0.83)), url(../imagenes/fondo_superior.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#intro{
+    display: flex;
+    padding: 50px 0;
+    flex-flow: row wrap;
+    height:100%;
+    min-height: 600px;
+}
+#descripcion{
+    flex-basis: 60%;
+    text-align: justify;
+    padding: 0 1em 0;
+    flex-grow: 2;
+    color: #fff;
+}
+#formulario{
+    flex-basis:30%;
+    background-color: #fff;
+    padding:20px 1em;
+}
+h1 {
+    font-size: 2.68rem;
+    font-family: Arial, tahoma, Helvetica, sans-serif;
+    margin-bottom: 26px;
+}
+#descripcion p {
+    margin-bottom:33px;
+    line-height: 1.65;
+}
+#formulario h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 40px;
+}
+label{
+    display: block;
+    margin: 10px o;
+    font-size: 0.9em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input[type="text"], input[type="email"]{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    padding: 0 1em;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+}
+input[type="submit"]{
+    display: inline-block;
+    border:none;
+    background-color:#054f0f;
+    color: #fff;
+    width: 100%;
+    padding: 10px 1em;
+    margin: 25px auto;
+    font-size: 1em;
+}
+#descripcion p i{
+    font-size:0.9rem;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #fff;
+    color: #000000;
+}
+small{
+    font-size:0.8em
+}
+small a{
+    color:#000000;
+}
+
+/* seccion 2 */
+article >section:nth-child(2){
+    padding: 60px 0;
+}
+#seccionDos{
+    display: flex;  /* para ponere en linea los elementos  */
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+#seccionDos i {   /* para formatear los iconos de cada uno */
+    color: #13a3db;
+    font-size: 2.5rem;
+    border: 1px solid;
+    border-radius: 50%;
+    padding:48px 0;   /* sirve para darle el radio a la circunferencia  */
+    width: 140px;
+    height: 140px;
+    margin-bottom:35px;
+}
+.col h3 {
+    font-size: 1.01rem;
+    font-weight:500px;
+    margin-bottom: 12px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* seccion 3 */
+article > section:nth-child(3) {
+    background-color: #f6f9fd;
+    padding: 40px 0;
+}
+#seccionTres {
+    display: flex;  
+    flex-flow: row wrap; 
+}
+#seccionTres div {
+    flex-basis: 60%;
+    text-align: justify;
+    padding-right: 2rem;
+    font-family: arial,sans-serif;
+}
+video {
+    flex-basis: 40%;
+    max-width: 100%;
+    width: 40%; /* Añadido: Ajustar el ancho del video */
+    align-self: flex-start; /* Añadido: Ajustar la altura del video de manera proporcional */
+}
+#seccionTres a{
+    display: inline-block;
+    margin: 44px 0;
+    padding: 18px 14em;
+    border: 1px solid #000;
+    background-color: #008000;
+    color: #fff;
+    text-decoration: none;
+    background-position: center;
+
+}
+h2 {
+    margin-bottom: 20px;
+}
+
+/* seccion 4 */
+article > section:nth-child(4) {
+    padding: 60px 0 0;
+    text-align: center;
+}
+#seccionCuatro {
+    display: flex;
+
+    justify-content: space-between;
+    margin: 50px auto; /* Corregido: Punto y coma en lugar de coma al final */
+}
+.card img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.card{
+    margin: 24px 0.9rem;
+    box-shadow: 2px 5px 15px #ccc9c9;
+    padding: 0 0 40px 0;
+    padding-bottom: 25px;
+}
+.card p{
+    font-size:0.9em;
+    padding: 12px 2rem;
+}
+.card i{
+    font-size:1.5rem;
+    color: #107ab7;
+    margin: 0 0.2em;
+}
+
+/* seccion 5 */
+article > section:nth-child(5){
+    background-image: linear-gradient( to left top, rgba(16,123,167,0.83), rgba(16,123,167,0.83)), url(../imagenes/fondo_inferior.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+#seccionCinco{
+    display: flex;
+    flex-flow: column wrap;height: 100%;
+    min-height: 300px;
+    justify-content: center;
+    align-items:center;
+    color: #fff;
+    height: 100px;
+}
+#seccionCinco p{
+    padding:20px 0;
+}
+#seccionCinco h2{
+    margin-bottom:0;
+}
+#seccionCinco a{
+    display: block;
+    background-color: #37b81b;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 2em;
+}
+#seccionCinco a:hover{
+    background-color: #afdda5;
+    color: #411f1f;
+    font-weight: bold;
+    transition: all 1s;
+}
+
+            /* FOOTER */
+
+footer{
+    background-color: #2c2a2a;
+    padding: 20px 0;
+    color: #fff;
+}
+#PieDePagina{
+    overflow: hidden;
+}
+.nav{
+    float:left;
+}
+.copyright{
+    float: right;
+    color: #c0c0bc;
+    padding-top: 3px;
+}
+.nav li{
+    display:inline-block;
+    font-size:0.8rem;
+    padding: 12px 0 0;
+}
+.nav li a{
+    color: #c0bcbc;
+    text-decoration: none;
+    padding-right: 0.5rem;
+    text-align: center;
+}
+.nav li a:hover{
+    text-decoration: underline;
+    background-color: #afdda5;
+    color: #f6320f;
+    font-weight: bold;
+    text-align: center;
+}
+
+                /* MEDIA QUERIS*/
+/* Aplicar los siguientes estilos cuando el tamaño del viwports se encuentre entre 960px y 1199px*/
+
+@media screen and (min-width: 878px) and (max-width: 1199px) {
+    .col h3 {
+        font-size: 0.9rem;
+    }
+
+    #seccionTres a {
+        padding: 18px 1rem;
+        background-position: right;
+    }
+}
+@media screen and (min-width: 690px) and (max-width:877) {
+    seccionDos {   /* para formatear los iconos de cada uno */
+        
+        flex-flow: column;
+}
+}    
